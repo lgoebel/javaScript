@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Escolhendo numero para aparecer</h1>
+    </header>
+    <section>
+        <div>
+            Escolha a range dos numeros<br>
+            Primeiro:<input type="number" name="inicial" id="inicial" min="0"><br>
+            Último:<input type="number" name="final" id="final" min="0">
+        </div>
+        <div>
+            Quantos você deseja pular<br>
+            Pular:<input type="number" name="Passo" id="passo" min="0">
+        </div>
+        <p>
+            <input type="button" value="mostrar" onclick="verificar()">
+        </p>
+        <div id="res">
+            Aqui irá mostrar o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Cleiton Rasta</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

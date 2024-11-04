@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            color:blue;
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola mundo!</h1>
+    <p>doidera</p> 
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg"> Clique em mim</div> <!--name, id, class-->
+    <script>
+        var p1 = document.getElementsByTagName(`p`)[1]
+        /*
+        document.write(`Esta escrito assim: `+ p1.innerText)
+        var d = document.getElementById('msg')  //pode dar id
+        d.style.background = 'green'
+        */
+       var d = document.querySelector('div#msg')
+       //classe representada dentro de querySelector "." 
+       //id representada por "#"
+
+        d.style.background = 'blue'
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo programa</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        var n1 = Number(window.prompt('Qual valor do seu salário?'))
+        document.write(`Seu nome é <strong>${nome}</strong> e tem ${nome.length} letras<br><br>`)
+        document.write(`Seu nome em caixa alta fica: ${nome.toUpperCase()}<br><br>`)
+        document.write(`Seu salário é de ${n1} e com centavos fica: ${n1.toFixed(2)}<br><br>`)
+        document.write(`Seu salário em reais é de: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`) 
+        
+
+        /*
+        n1.toFixed(2) (coloca o número com duas casas depois da virgula)
+        n1.toFixed(2).replace('.',',') (tira o ponto e faz ele ser uma virgula)
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) (verifica o número e transforma ele em valor de real)
+
+        */
+
+        /*
+        variavel.toUpperCase (colocar em caixa alta)
+        variavel.length (tamanho da palavra)
+        */
+    </script>
+</body>
+</html>
